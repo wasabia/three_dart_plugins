@@ -1,0 +1,34 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "three_dart_jsm",
+            "cwd": "three_dart_jsm",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "three_dart_jsm (profile mode)",
+            "cwd": "three_dart_jsm",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "three_dart_text",
+            "cwd": "three_dart_text",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "three_dart_text (profile mode)",
+            "cwd": "three_dart_text",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        }
+    ]
+}
