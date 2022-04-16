@@ -62,7 +62,7 @@ class DerivedBasicMaterial extends MeshBasicMaterial {
       shaderInfo.vertexShader = upgradedShaders["vertexShader"];
       shaderInfo.fragmentShader = upgradedShaders["fragmentShader"];
    
-      assign(shaderInfo.uniforms!, _deriveMaterial.uniforms);
+      assign(shaderInfo.uniforms, _deriveMaterial.uniforms);
 
       // Inject auto-updating time uniform if requested
       if (options["timeUniform"] != null) {
@@ -145,7 +145,7 @@ class DerivedBasicMaterial extends MeshBasicMaterial {
     if (baseMaterial != null && !(baseMaterial!.isShaderMaterial) && !(baseMaterial!.type == "DerivedBasicMaterial")) {
       assign(this.extensions!, source.extensions);
       assign(this.defines!, source.defines);
-      assign(this.uniforms!, UniformsUtils.clone(source.uniforms));
+      assign(this.uniforms, UniformsUtils.clone(source.uniforms));
     }
     return this;
   }

@@ -159,7 +159,7 @@ getTextRenderInfo(Map<String, dynamic> args2, callback) {
   // var {textureWidth, sdfExponent} = CONFIG;
   // var {sdfGlyphSize} = args;
 
-  var textureWidth = CONFIG["textureWidth"];
+  int textureWidth = CONFIG["textureWidth"]!.toInt();
   var sdfExponent = CONFIG["sdfExponent"];
   var sdfGlyphSize = args["sdfGlyphSize"];
 
